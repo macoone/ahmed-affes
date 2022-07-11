@@ -1,0 +1,21 @@
+ALGORITHM sentence
+VAR
+ P:INTEGER//nb de charachter 
+BEGIN
+ write("Your word is :")
+ read(sent)
+ WHILE (sent<>"."):
+    p=p+1
+    for i in range(0,p-1):
+        IF sent[i]=" ":
+            IF sent[0]<>" ":
+             words = words+1
+            END_IF
+        END_IF        
+            majus(sent)
+    IF (sent[i]="A" or sent[i]="O" or sent[i]="U" or sent[i]="E" or sent[i]="I" or sent[i]="Y"):
+        voy= voy+1
+        END_IF          
+ END_WHILE
+  write ("words=",words,"voy=",voy)
+END
